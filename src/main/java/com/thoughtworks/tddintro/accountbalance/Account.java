@@ -8,9 +8,10 @@ public class Account {
     }
 
     public void deposit(int amount) {
+        balance = balance + amount;
     }
 
     public int getBalance() {
-        return -1;
+        return balance;
     }
 }
