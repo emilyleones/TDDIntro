@@ -5,6 +5,14 @@ public class Factorial {
         if (i == 0) {
             return 1;
         }
-        return i;
+
+        int result = 1;
+
+        while (i != 0) {
+            result = result * i;
+            i--;
+        }
+
+        return result;
     }
 }
