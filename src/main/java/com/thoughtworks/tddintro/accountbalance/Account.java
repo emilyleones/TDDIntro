@@ -12,6 +12,7 @@ public class Account {
     }
 
     public void withdraw(int amount) {
+        balance = balance - amount;
     }
 
     public int getBalance() {
