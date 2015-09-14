@@ -55,7 +55,16 @@ public class LibraryTest {
     @Test
     public void shouldPrintBothBookTitlesWhenThereAreTwoBooks() {
 
-        // implement me
+        String title1 = "Head First Java";
+        books.add(title1);
+        String title2 = "Test Driven Development by Example";
+        books.add(title2);
+        Library library = new Library(books, printStream, null);
+
+        library.listBooks();
+
+        verify(printStream).println(title1);
+        verify(printStream).println(title2);
     }
 
     /*
